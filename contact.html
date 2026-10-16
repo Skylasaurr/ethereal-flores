@@ -11,19 +11,15 @@
 <body  class="mt-28">
     <div id="header-placeholder"></div>
 
-    <section class="flex flex-row justify-between px-20 pt-2">
-
+    <section id="Hero" class="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-20 pt-2">
         <div class="flex flex-col">
             <div class="flex flex-row items-center gap-2">
                 <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
                 <h1 class="flex font-semibold text-blue-500">Contact Ethereal Flores</h1>
             </div>
             <h1 class="text-7xl font-bold pt-7">Let's stay in touch.</h1>
-            <p class="text-slate-600 pt-9 text-lg">Whether you have a question, a collaboration idea, or a story to share, we would love to <br>
-                hear from you. Use the form below or reach out directly—we usually reply within one <br>
-                business day.
-            </p>
-            <button class="text-white font-semibold bg-blue-500 border border-blue-500 hover:bg-transparent hover:text-blue-500 w-fit px-4.5 py-2 rounded-lg mt-6">Send a message</button>
+            <p class="text-slate-600 pt-9 text-lg">Whether you have a question, a collaboration idea, or a story to share, we would love to hear from you. Use the form below or reach out directly—we usually reply within one business day.</p>
+            <button class="text-white font-semibold bg-blue-500 border border-blue-500 hover:bg-transparent hover:text-blue-500 active:border-blue-800 active:text-blue-800 active:bg-transparent w-fit px-4.5 py-2 rounded-lg mt-6">Send a message</button>
 
             <div class="flex flex-row mt-8 gap-4">
                 <div class="flex flex-row items-center gap-2 bg-blue-100 px-3 py-3 rounded-xl">
@@ -56,9 +52,14 @@
             </div>
         </div>
 
-        <div class="flex flex-col ps-10 gap-4 justify-center">
-                <img src="Resources/flower-base.svg" alt="flower image" width="700px" class="rounded-lg mt-10 shadow-lg">
+        <div class="flex items-center">
+            <img src="Resources/flower-base.svg" alt="flower image"
+                class="w-full max-w-[700px] h-auto rounded-lg mt-10 shadow-lg">
         </div>
+    </section>
+
+    <section>
+        
     </section>
 </body>
 </html>
