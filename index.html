@@ -6,12 +6,72 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="js/script.js" defer></script>
     
-    <title>The Etheary Flores</title>
+    <title>The Etheary Flores - Home</title>
 </head>
-<body class="mt-28">
-    <div id="header-placeholder"></div>
-    <div class="flex flex-col items-center mt-56">
-        <h1 class="text-3xl font-bold">Main</h1>
+<body class="min-h-screen bg-gradient-to-r from-blue-950 via-blue-500 to-blue-300">
+  <div id="header-placeholder"></div>
+
+  <main class="flex min-h-screen items-center px-[6vw] pt-20 text-left text-white ml-20">
+    <section class="w-full max-w-sm">
+      <p class="mb-4 text-xs sm:text-sm">
+        <span class="mr-2 inline-block w-3 align-middle border-t border-white"></span>Discover the meaning behind every bloom
+      </p>
+        <h1 class="mb-4 whitespace-nowrap text-5xl font-bold leading-tight sm:text-4xl md:text-[2.75rem]">
+        Petals that linger.
+      </h1>
+      <p class="mb-5 max-w-xs text-justify text-sm leading-relaxed sm:text-base">
+        Ethereal Flores is a flower dictionary and companion guide. Explore seasonal blooms, learn their meanings, and find the right flowers for every occasion, mood, and space.
+      </p>
+      <a href="explore.html" class="mb-3 inline-flex items-center gap-8 rounded bg-white px-4 py-3 text-3sm font-medium text-blue-800">
+        Explore flowers <span aria-hidden="true" class="bg-transparent">↗</span>
+      </a>
+      <p class="text-[10px]">A curated guide to flower meanings, care notes, and seasonal inspiration.</p>
+    </section>
+
+    
+  <div class="relative w-full max-w-3xl overflow-hidden rounded-2xl group ">
+    
+    <div id="carousel-slides" class="flex transition-transform duration-500 ease-in-out">
+      
+      <!-- Slide 1 -->
+      <div class="w-full flex-shrink-0 relative">
+        <img src="Resources/Flower 1.svg" alt="Slide 1" class="w-full h-80 sm:h-96">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="w-full flex-shrink-0 relative">
+        <img src="Resources/Flower 2.svg" alt="Slide 2" class="w-full h-80 sm:h-96">
+      </div>
+
+
+      <div class="w-full flex-shrink-0 relative">
+        <img src="Resources/Flower 3.svg" alt="Slide 3" class="w-full h-80 sm:h-96 ">
+      </div>
+
     </div>
+
+    <button id="prev-btn" aria-label="Previous Slide" 
+      class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-3 rounded-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <button id="next-btn" aria-label="Next Slide" 
+      class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-3 rounded-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <div id="indicators" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+      <button class="w-3 h-3 rounded-full bg-white transition-all duration-300" aria-label="Slide 1"></button>
+      <button class="w-3 h-3 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 2"></button>
+      <button class="w-3 h-3 rounded-full bg-white/50 transition-all duration-300" aria-label="Slide 3"></button>
+    </div>
+
+  </div>
+  </main>
+
 </body>
 </html>
