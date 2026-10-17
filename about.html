@@ -1,17 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-	<title>Ethereal Flores - About</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+    <title>Ethereal Flores - About</title>
+
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .flower {
+            color: #a87983;
+        }
+    </style>
 </head>
-<body>
-    <div id="header-placeholder"></div>
-    <div class="flex flex-col items-center justify-center min-h-screen">
-        <h1 class="text-3xl font-bold">About</h1>
-    </div>
+
+<body class="bg-[#faf8f3] text-[#303b30]">
+
+    <main>
+        <section class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img
+                    class="w-full h-[380px] md:h-[520px] object-cover rounded-t-full"
+                    src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85"
+                    alt="Pastel flowers in bloom">
+
+                <p class="absolute bottom-5 left-5 bg-[#faf8f3]/90 px-4 py-3 text-xs tracking-widest uppercase">
+                    A little beauty, every day
+                </p>
+            </div>
+
+            <div>
+                <p class="uppercase tracking-[.25em] text-xs text-[#a87983] mb-5">
+                    The heart of Ethereal Flores
+                </p>
+
+                <h1 class="text-5xl md:text-7xl leading-tight mb-6">
+                    Beauty in every
+                    <em class="text-[#a87983]">little detail.</em>
+                </h1>
+
+                <p class="text-[#687064] leading-8 mb-8">
+                    We believe flowers are more than beautiful things.
+                    They are thoughtful gestures, quiet reminders, and
+                    little ways of making ordinary moments feel special.
+                </p>
+
+                <div class="flex flex-wrap gap-3">
+                    <a
+                        href="#values"
+                        class="bg-[#53634f] text-white px-6 py-3 rounded-full text-sm hover:bg-[#3d4b3a]">
+                        Discover our values ↗
+                    </a>
+
+                    <a
+                        href="#history"
+                        class="border border-[#c9c9b9] px-6 py-3 rounded-full text-sm hover:bg-[#eeece2]">
+                        Our story
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="values" class="bg-[#eeeee5] py-16 md:py-24 px-6 md:px-12">
+
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center max-w-xl mx-auto mb-12">
+                    <p class="uppercase tracking-[.25em] text-xs text-[#a87983] mb-4">
+                        What guides us
+                    </p>
+                    <h2 class="text-4xl md:text-5xl mb-4">
+                        The things we <em>believe in.</em>
+                    </h2>
+                    <p class="text-[#687064] leading-7">
+                        Every petal tells a story. These are the values
+                        at the heart of ours.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-5">
+
+                    <div class="bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between min-h-[270px]">
+                        <span class="text-xs tracking-widest text-[#a87983]">
+                            OUR PROMISE
+                        </span>
+                        <div>
+                            <h3 class="text-3xl mb-5">
+                                Thoughtful<br>Details
+                            </h3>
+                            <span class="text-5xl flower">✿</span>
+                        </div>
+                        <p class="text-sm leading-7 text-[#687064]">
+                            We believe small touches make meaningful
+                            experiences. Every detail deserves care,
+                            intention, and an appreciation for simple beauty.
+                        </p>
+                    </div>
+
+                    <div class="bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between min-h-[270px]">
+
+                        <span class="text-xs tracking-widest text-[#a87983]">
+                            OUR PEOPLE
+                        </span>
+
+                        <div>
+                            <h3 class="text-3xl mb-5">
+                                Warm<br>Connection
+                            </h3>
+
+                            <span class="text-5xl flower">❀</span>
+                        </div>
+
+                        <p class="text-sm leading-7 text-[#687064]">
+                            Flowers help us express what words sometimes
+                            cannot. We celebrate bonds, memories, and
+                            everyday gestures that bring people closer.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between min-h-[270px]">
+
+                        <span class="text-xs tracking-widest text-[#a87983]">
+                            OUR JOURNEY
+                        </span>
+
+                        <div>
+                            <h3 class="text-3xl mb-5">
+                                Gentle<br>Growth
+                            </h3>
+
+                            <span class="text-5xl flower">❋</span>
+                        </div>
+
+                        <p class="text-sm leading-7 text-[#687064]">
+                            Like flowers, meaningful things take time.
+                            We value patience, learning, and growing with
+                            intention while staying true to what matters.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div class="mb-10">
+                <p class="uppercase tracking-[.25em] text-xs text-[#a87983] mb-4">
+                    Our journey
+                </p>
+
+                <h2 class="text-4xl md:text-5xl">
+                    From a tiny seed <em>to a bloom.</em>
+                </h2>
+
+                <p class="text-[#687064] mt-4 max-w-xl leading-7">
+                    Every beautiful thing begins somewhere. Explore the
+                    stages of a flower's journey as a reflection of growth,
+                    care, and possibility.
+                </p>
+
+            </div>
+
+            <div class="bg-white border border-[#e4e2d8] rounded-2xl overflow-hidden grid md:grid-cols-2">
+
+                <div class="relative min-h-[300px] md:min-h-[470px]">
+
+                    <img
+                        class="absolute inset-0 w-full h-full object-cover"
+                        src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85"
+                        alt="Young plant growing">
+
+                    <span class="absolute top-5 left-5 bg-[#faf8f3]/90 px-4 py-2 text-xs tracking-widest">
+                        PHASE 01 / SEED
+                    </span>
+                </div>
+
+                <div class="p-7 md:p-12 flex flex-col justify-center">
+
+                    <p class="text-sm text-[#a87983] tracking-widest mb-4">
+                        01 — 04
+                    </p>
+
+                    <h3 class="serif text-4xl md:text-5xl mb-5">
+                        Where it begins
+                    </h3>
+
+                    <p class="text-[#687064] leading-8">
+                        Every journey starts with a small possibility.
+                        A seed holds the promise of something beautiful,
+                        waiting for the right conditions to begin.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
