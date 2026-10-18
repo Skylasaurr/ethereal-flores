@@ -10,71 +10,107 @@ fetch('components/header.html')
 
   document.addEventListener("DOMContentLoaded", () => {
   const slidesWrapper = document.getElementById("carousel-slides");
-  const slides = slidesWrapper.children;
-  const prevBtn = document.getElementById("prev-btn");
-  const nextBtn = document.getElementById("next-btn");
-  const indicatorDots = document.querySelectorAll("#indicators button");
+  if (slidesWrapper) {
+    const slides = slidesWrapper.children;
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const indicatorDots = document.querySelectorAll("#indicators button");
 
-  let currentIndex = 0;
-  const totalSlides = slides.length;
-  let autoPlayInterval;
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoPlayInterval;
 
-  function updateCarousel() {
-    slidesWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+    function updateCarousel() {
+      slidesWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+      indicatorDots.forEach((dot, index) => {
+        if (index === currentIndex) {
+          dot.classList.remove("bg-white/50", "w-3");
+          dot.classList.add("bg-white", "w-6");
+        } else {
+          dot.classList.remove("bg-white", "w-6");
+          dot.classList.add("bg-white/50", "w-3");
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    nextBtn.addEventListener("click", () => {
+      nextSlide();
+      resetAutoPlay();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      prevSlide();
+      resetAutoPlay();
+    });
+
 
     indicatorDots.forEach((dot, index) => {
-      if (index === currentIndex) {
-        dot.classList.remove("bg-white/50", "w-3");
-        dot.classList.add("bg-white", "w-6"); 
-      } else {
-        dot.classList.remove("bg-white", "w-6");
-        dot.classList.add("bg-white/50", "w-3");
+      dot.addEventListener("click", () => {
+        currentIndex = index;
+        updateCarousel();
+        resetAutoPlay();
+      });
+    });
+
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoPlay() {
+      clearInterval(autoPlayInterval);
+      startAutoPlay();
+    }
+
+    const carouselContainer = slidesWrapper.parentElement;
+    carouselContainer.addEventListener("mouseenter", () => clearInterval(autoPlayInterval));
+    carouselContainer.addEventListener("mouseleave", startAutoPlay);
+
+    updateCarousel();
+    startAutoPlay();
+  }
+
+  function setupModal(modal) {
+    if (!modal.id) {
+      console.error("Modal is missing an id:", modal);
+      return;
+    }
+
+    document.querySelectorAll("[data-modal-target]").forEach((trigger) => {
+      if (trigger.dataset.modalTarget !== modal.id) return;
+
+      trigger.addEventListener("click", () => modal.showModal());
+
+      if (trigger.getAttribute("role") === "button" && !trigger.matches("button, a")) {
+        trigger.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            modal.showModal();
+          }
+        });
+      }
+    });
+
+    modal.querySelectorAll("[data-modal-close]").forEach((closeButton) => {
+      closeButton.addEventListener("click", () => modal.close());
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.close();
       }
     });
   }
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateCarousel();
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    updateCarousel();
-  }
-
-  nextBtn.addEventListener("click", () => {
-    nextSlide();
-    resetAutoPlay();
-  });
-
-  prevBtn.addEventListener("click", () => {
-    prevSlide();
-    resetAutoPlay();
-  });
-
-
-  indicatorDots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      currentIndex = index;
-      updateCarousel();
-      resetAutoPlay();
-    });
-  });
-
-  function startAutoPlay() {
-    autoPlayInterval = setInterval(nextSlide, 5000);
-  }
-
-  function resetAutoPlay() {
-    clearInterval(autoPlayInterval);
-    startAutoPlay();
-  }
-
-  const carouselContainer = slidesWrapper.parentElement;
-  carouselContainer.addEventListener("mouseenter", () => clearInterval(autoPlayInterval));
-  carouselContainer.addEventListener("mouseleave", startAutoPlay);
-
-  updateCarousel();
-  startAutoPlay();
+  document.querySelectorAll("dialog[data-modal]").forEach(setupModal);
 });
