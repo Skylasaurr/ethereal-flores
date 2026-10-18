@@ -3,195 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="js/script.js" defer></script>
-
-  
     <title>Ethereal Flores - About</title>
+
 </head>
 
-<body class="mt-5">
+<body class="bg-gradient-to-r from-blue-700 to-blue-100 text-[#303b30]">
+
     <div id="header-placeholder"></div>
+    <header class="px-6 md:px-12 py-5 flex justify-between items-center border-b border-[#e6e4d9]">
+        <a href="#" class="font-serif text-2xl">ethereal flores<span class="text-[#a87983]">.</span></a>
+        <nav class="flex gap-5 text-sm">
+            <a href="#values" class="hover:text-[#a87983]">Our Values</a>
+            <a href="#history" class="hover:text-[#a87983]">Our Story</a>
+        </nav>
+    </header>
 
     <main>
         <section class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
             <div class="relative">
-                <img
-                    class="w-full h-[380px] md:h-[520px] object-cover rounded-t-full"
-                    src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85"
-                    alt="Pastel flowers in bloom">
-
+                <img class="w-full h-[380px] md:h-[520px] object-cover rounded-t-full"
+                     src="https://imgs.search.brave.com/B3fEK899iIWWFP5h9U2rHxa-lnSH60cnbbX54x-QAIQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzkyLzQxLzk5/LzM2MF9GXzE5MjQx/OTk5NV9QZXdqcmZE/UEpmTGFicnl5dUJS/bnVTd1o4aTBKZkw3/di5qcGc"
+                     alt="Pastel flowers in bloom">
                 <p class="absolute bottom-5 left-5 bg-[#faf8f3]/90 px-4 py-3 text-xs tracking-widest uppercase">
                     A little beauty, every day
                 </p>
             </div>
-
             <div>
-                <p class="uppercase tracking-[.25em] text-xs text-[#a87983] mb-5">
-                    The heart of Ethereal Flores
-                </p>
-
-                <h1 class="text-5xl md:text-7xl leading-tight mb-6">
-                    Beauty in every
-                    <em class="text-[#a87983]">little detail.</em>
+                <p class="uppercase tracking-[.25em] text-xs text-[#ffffff] mb-5">The heart of Ethereal Flores</p>
+                <h1 class="font-serif text-5xl md:text-7xl leading-tight text-[#ffffff] mb-6">
+                    Beauty in every little detail.
                 </h1>
-
                 <p class="text-[#687064] leading-8 mb-8">
-                    We believe flowers are more than beautiful things.
-                    They are thoughtful gestures, quiet reminders, and
-                    little ways of making ordinary moments feel special.
+                    We believe flowers are more than beautiful things. They are thoughtful gestures, quiet reminders, and little ways of making ordinary moments feel special.
                 </p>
-
                 <div class="flex flex-wrap gap-3">
-                    <a
-                        href="#values"
-                        class="bg-[#53634f] text-white px-6 py-3 rounded-full text-sm hover:bg-[#3d4b3a]">
-                        Discover our values ↗
-                    </a>
-
-                    <a
-                        href="#history"
-                        class="border border-[#c9c9b9] px-6 py-3 rounded-full text-sm hover:bg-[#eeece2]">
-                        Our story
-                    </a>
+                    <a href="#values" class="bg-[#000080] text-white px-6 py-3 rounded-full text-sm hover:bg-[#3d4b3a]">Discover our values ↗</a>
+                    <a href="#history" class="border border-[#c9c9b9] px-6 py-3 rounded-full text-sm hover:bg-[#eeece2]">Our story</a>
                 </div>
             </div>
         </section>
 
-        <section id="values" class="bg-[#eeeee5] py-16 md:py-24 px-6 md:px-12">
-
+        <section id="values" class="bg-gradient-to-r from-[#ADD8E6] to-[#F0F8FF] py-16 md:py-24 px-6 md:px-12">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center max-w-xl mx-auto mb-12">
-                    <p class="uppercase tracking-[.25em] text-xs text-[#a87983] mb-4">
-                        What guides us
-                    </p>
-                    <h2 class="text-4xl md:text-5xl mb-4">
-                        The things we <em>believe in.</em>
-                    </h2>
-                    <p class="text-[#687064] leading-7">
-                        Every petal tells a story. These are the values
-                        at the heart of ours.
-                    </p>
+                    <p class="uppercase tracking-[.25em] text-xs text-[#000000] mb-4">What guides us</p>
+                    <h2 class="font-serif text-4xl md:text-5xl mb-4">The things we believe in.</h2>
+                    <p class="text-[#687064] leading-7">Every petal tells a story. These are the values at the heart of ours.</p>
+                    <p class="text-xs text-[#858879] mt-3">Click a card to discover more.</p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-5">
-
-                    <div class="bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between min-h-[270px]">
-                        <span class="text-xs tracking-widest text-[#a87983]">
-                            OUR PROMISE
-                        </span>
-                        <div>
-                            <h3 class="text-3xl mb-5">
-                                Thoughtful<br>Details
-                            </h3>
-                            <span class="text-5xl flower">✿</span>
+                    <button class="flip-card group text-left min-h-[270px] perspective-[1000px]" type="button" aria-pressed="false">
+                        <div class="relative h-full min-h-[270px] transform-3d transition-transform duration-600 ease-[ease] group-[.flipped]:rotate-y-180">
+                            <div class="absolute inset-0 backface-hidden bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between">
+                                <span class="text-xs tracking-widest text-[#a87983]">OUR PROMISE</span>
+                                <div>
+                                    <h3 class="font-serif text-3xl mb-5">Thoughtful<br>Details</h3>
+                                    <span class="text-5xl text-[#a87983]">✿</span>
+                                </div>
+                                <span class="text-xs text-[#777b6e]">A little care changes everything ↗</span>
+                            </div>
+                            <div class="absolute inset-0 backface-hidden rotate-y-180 bg-[#6B8E9B] text-white rounded-2xl p-7 flex flex-col justify-between">
+                                <span class="text-xs tracking-widest">OUR PROMISE</span>
+                                <div>
+                                    <h3 class="font-serif text-2xl mb-3">Thoughtful Details</h3>
+                                    <p class="text-sm leading-7">We believe small touches make meaningful experiences. Every detail deserves care, intention, and an appreciation for simple beauty.</p>
+                                </div>
+                                <span class="text-xs">Click to turn back ↻</span>
+                            </div>
                         </div>
-                        <p class="text-sm leading-7 text-[#687064]">
-                            We believe small touches make meaningful
-                            experiences. Every detail deserves care,
-                            intention, and an appreciation for simple beauty.
-                        </p>
-                    </div>
-
-                    <div class="bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between min-h-[270px]">
-
-                        <span class="text-xs tracking-widest text-[#a87983]">
-                            OUR PEOPLE
-                        </span>
-
-                        <div>
-                            <h3 class="text-3xl mb-5">
-                                Warm<br>Connection
-                            </h3>
-
-                            <span class="text-5xl flower">❀</span>
+                    </button>
+                    <button class="flip-card group text-left min-h-[270px] perspective-[1000px]" type="button" aria-pressed="false">
+                        <div class="relative h-full min-h-[270px] transform-3d transition-transform duration-600 ease-[ease] group-[.flipped]:rotate-y-180">
+                            <div class="absolute inset-0 backface-hidden bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between">
+                                <span class="text-xs tracking-widest text-[#a87983]">OUR PEOPLE</span>
+                                <div>
+                                    <h3 class="font-serif text-3xl mb-5">Warm<br>Connection</h3>
+                                    <span class="text-5xl text-[#a87983]">❀</span>
+                                </div>
+                                <span class="text-xs text-[#777b6e]">Made to bring hearts closer ↗</span>
+                            </div>
+                            <div class="absolute inset-0 backface-hidden rotate-y-180 bg-[#A7C7D9] text-white rounded-2xl p-7 flex flex-col justify-between">
+                                <span class="text-xs tracking-widest">OUR PEOPLE</span>
+                                <div>
+                                    <h3 class="font-serif text-2xl mb-3">Warm Connection</h3>
+                                    <p class="text-sm leading-7">Flowers help us express what words sometimes cannot. We celebrate bonds, memories, and everyday gestures that bring people closer.</p>
+                                </div>
+                                <span class="text-xs">Click to turn back ↻</span>
+                            </div>
                         </div>
-
-                        <p class="text-sm leading-7 text-[#687064]">
-                            Flowers help us express what words sometimes
-                            cannot. We celebrate bonds, memories, and
-                            everyday gestures that bring people closer.
-                        </p>
-
-                    </div>
-
-                    <div class="bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between min-h-[270px]">
-
-                        <span class="text-xs tracking-widest text-[#a87983]">
-                            OUR JOURNEY
-                        </span>
-
-                        <div>
-                            <h3 class="text-3xl mb-5">
-                                Gentle<br>Growth
-                            </h3>
-
-                            <span class="text-5xl flower">❋</span>
+                    </button>
+                    <button class="flip-card group text-left min-h-[270px] perspective-[1000px]" type="button" aria-pressed="false">
+                        <div class="relative h-full min-h-[270px] transform-3d transition-transform duration-600 ease-[ease] group-[.flipped]:rotate-y-180">
+                            <div class="absolute inset-0 backface-hidden bg-[#faf8f3] border border-[#dedfd2] rounded-2xl p-7 flex flex-col justify-between">
+                                <span class="text-xs tracking-widest text-[#a87983]">OUR JOURNEY</span>
+                                <div>
+                                    <h3 class="font-serif text-3xl mb-5">Gentle<br>Growth</h3>
+                                    <span class="text-5xl text-[#a87983]">❋</span>
+                                </div>
+                                <span class="text-xs text-[#777b6e]">Bloom in your own time ↗</span>
+                            </div>
+                            <div class="absolute inset-0 backface-hidden rotate-y-180 bg-[#899EB5] text-white rounded-2xl p-7 flex flex-col justify-between">
+                                <span class="text-xs tracking-widest">OUR JOURNEY</span>
+                                <div>
+                                    <h3 class="font-serif text-2xl mb-3">Gentle Growth</h3>
+                                    <p class="text-sm leading-7">Like flowers, meaningful things take time. We value patience, learning, and growing with intention while staying true to what matters.</p>
+                                </div>
+                                <span class="text-xs">Click to turn back ↻</span>
+                            </div>
                         </div>
-
-                        <p class="text-sm leading-7 text-[#687064]">
-                            Like flowers, meaningful things take time.
-                            We value patience, learning, and growing with
-                            intention while staying true to what matters.
-                        </p>
-                    </div>
+                    </button>
                 </div>
             </div>
         </section>
 
         <section id="history" class="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24">
             <div class="mb-10">
-                <p class="uppercase tracking-[.25em] text-xs text-[#a87983] mb-4">
-                    Our journey
+                <p class="uppercase tracking-[.25em] text-xs text-[#ffffff] mb-4">Our journey</p>
+                <h2 class="font-serif text-4xl md:text-5xl text-[#ffffff]">From a tiny seed to a bloom.</h2>
+                <p class="text-[#ffffff] mt-4 max-w-xl leading-7">
+                    Every beautiful thing begins somewhere. Explore the stages of a flower's journey as a reflection of growth, care, and possibility.
                 </p>
-
-                <h2 class="text-4xl md:text-5xl">
-                    From a tiny seed <em>to a bloom.</em>
-                </h2>
-
-                <p class="text-[#687064] mt-4 max-w-xl leading-7">
-                    Every beautiful thing begins somewhere. Explore the
-                    stages of a flower's journey as a reflection of growth,
-                    care, and possibility.
-                </p>
-
             </div>
-
-            <div class="bg-white border border-[#e4e2d8] rounded-2xl overflow-hidden grid md:grid-cols-2">
-
+            <div class="bg-[#FAF8F3] border border-[#e4e2d8] rounded-2xl overflow-hidden grid md:grid-cols-2">
                 <div class="relative min-h-[300px] md:min-h-[470px]">
-
-                    <img
-                        class="absolute inset-0 w-full h-full object-cover"
-                        src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85"
-                        alt="Young plant growing">
-
-                    <span class="absolute top-5 left-5 bg-[#faf8f3]/90 px-4 py-2 text-xs tracking-widest">
-                        PHASE 01 / SEED
-                    </span>
+                    <img id="historyImage" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-250 ease-[ease]"
+                         src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85"
+                         alt="Young plant growing">
+                    <span id="phaseLabel" class="absolute top-5 left-5 bg-[#faf8f3]/90 px-4 py-2 text-xs tracking-widest">PHASE 01 / SEED</span>
                 </div>
-
                 <div class="p-7 md:p-12 flex flex-col justify-center">
-
-                    <p class="text-sm text-[#a87983] tracking-widest mb-4">
-                        01 — 04
+                    <p id="phaseNumber" class="text-sm text-[#a87983] tracking-widest mb-4">01 — 04</p>
+                    <h3 id="historyTitle" class="font-serif text-4xl md:text-5xl mb-5">Where it begins</h3>
+                    <p id="historyText" class="text-[#687064] leading-8 mb-9">
+                        Every journey starts with a small possibility. A seed holds the promise of something beautiful, waiting for the right conditions to begin.
                     </p>
-
-                    <h3 class="serif text-4xl md:text-5xl mb-5">
-                        Where it begins
-                    </h3>
-
-                    <p class="text-[#687064] leading-8">
-                        Every journey starts with a small possibility.
-                        A seed holds the promise of something beautiful,
-                        waiting for the right conditions to begin.
-                    </p>
-
+                    <div class="flex items-center justify-between gap-4">
+                        <div class="flex gap-2" aria-label="Choose a stage">
+                            <button class="history-dot w-8 h-2 rounded-full bg-[#53634f]" data-slide="0" aria-label="Stage 1"></button>
+                            <button class="history-dot w-3 h-2 rounded-full bg-[#d8d8ca]" data-slide="1" aria-label="Stage 2"></button>
+                            <button class="history-dot w-3 h-2 rounded-full bg-[#d8d8ca]" data-slide="2" aria-label="Stage 3"></button>
+                            <button class="history-dot w-3 h-2 rounded-full bg-[#d8d8ca]" data-slide="3" aria-label="Stage 4"></button>
+                        </div>
+                        <div class="flex gap-2">
+                            <button id="prevSlide" class="w-11 h-11 rounded-full border border-[#d8d8ca]" aria-label="Previous stage">←</button>
+                            <button id="nextSlide" class="w-11 h-11 rounded-full bg-[#000080] text-white" aria-label="Next stage">→</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <script>
+        document.querySelectorAll('.flip-card').forEach(function (card) {
+            card.addEventListener('click', function () {
+                const flipped = card.classList.toggle('flipped');
+                card.setAttribute('aria-pressed', String(flipped));
+            });
+        });
+
+        const stages = [
+            {
+                phase: 'PHASE 01 / SEED',
+                title: 'Where it begins',
+                text: 'Every journey starts with a small possibility. A seed holds the promise of something beautiful, waiting for the right conditions to begin.',
+                image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85',
+                alt: 'A young plant growing in soil'
+            },
+            {
+                phase: 'PHASE 02 / SPROUT',
+                title: 'Taking root',
+                text: 'With patience and care, the first signs of growth appear. Small beginnings build the foundation for everything that comes next.',
+                image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=85',
+                alt: 'Green seedlings growing in a garden'
+            },
+            {
+                phase: 'PHASE 03 / BUD',
+                title: 'Finding our identity',
+                text: 'As a plant develops, its character begins to show. This stage represents discovering what makes a journey distinctive and staying true to its purpose.',
+                image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85',
+                alt: 'Flower buds and soft blossoms'
+            },
+            {
+                phase: 'PHASE 04 / BLOOM',
+                title: 'Growing into beauty',
+                text: 'A bloom is not the end of growth, but a celebration of it. It represents sharing beauty with others while continuing to learn and flourish.',
+                image: 'https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1000&q=85',
+                alt: 'Flowers in full bloom'
+            }
+        ];
+
+        let currentStage = 0;
+
+        const historyImage = document.getElementById('historyImage');
+        const phaseLabel = document.getElementById('phaseLabel');
+        const phaseNumber = document.getElementById('phaseNumber');
+        const historyTitle = document.getElementById('historyTitle');
+        const historyText = document.getElementById('historyText');
+        const dots = document.querySelectorAll('.history-dot');
+
+        function showStage(index) {
+            currentStage = (index + stages.length) % stages.length;
+            const stage = stages[currentStage];
+            historyImage.style.opacity = '.25';
+            setTimeout(function () {
+                historyImage.src = stage.image;
+                historyImage.alt = stage.alt;
+                phaseLabel.textContent = stage.phase;
+                phaseNumber.textContent = String(currentStage + 1).padStart(2, '0') + ' — 04';
+                historyTitle.textContent = stage.title;
+                historyText.textContent = stage.text;
+                historyImage.style.opacity = '';
+            }, 160);
+
+            dots.forEach(function (dot, i) {
+                dot.classList.toggle('bg-[#53634f]', i === currentStage);
+                dot.classList.toggle('bg-[#d8d8ca]', i !== currentStage);
+                dot.classList.toggle('w-8', i === currentStage);
+                dot.classList.toggle('w-3', i !== currentStage);
+            });
+        }
+
+        document.getElementById('prevSlide').addEventListener('click', function () { showStage(currentStage - 1); });
+        document.getElementById('nextSlide').addEventListener('click', function () { showStage(currentStage + 1); });
+
+        dots.forEach(function (dot) {
+            dot.addEventListener('click', function () { showStage(Number(dot.dataset.slide)); });
+        });
+    </script>
 </body>
 </html>
