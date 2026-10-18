@@ -164,40 +164,39 @@
                 card.setAttribute('aria-pressed', String(flipped));
             });
         });
-
-        const stages = [
-            {
-                phase: 'PHASE 01 / SEED',
-                title: 'Where it begins',
-                text: 'Every journey starts with a small possibility. A seed holds the promise of something beautiful, waiting for the right conditions to begin.',
-                image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85',
-                alt: 'A young plant growing in soil'
-            },
-            {
-                phase: 'PHASE 02 / SPROUT',
-                title: 'Taking root',
-                text: 'With patience and care, the first signs of growth appear. Small beginnings build the foundation for everything that comes next.',
-                image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=85',
-                alt: 'Green seedlings growing in a garden'
-            },
-            {
-                phase: 'PHASE 03 / BUD',
-                title: 'Finding our identity',
-                text: 'As a plant develops, its character begins to show. This stage represents discovering what makes a journey distinctive and staying true to its purpose.',
-                image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85',
-                alt: 'Flower buds and soft blossoms'
-            },
-            {
-                phase: 'PHASE 04 / BLOOM',
-                title: 'Growing into beauty',
-                text: 'A bloom is not the end of growth, but a celebration of it. It represents sharing beauty with others while continuing to learn and flourish.',
-                image: 'https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1000&q=85',
-                alt: 'Flowers in full bloom'
-            }
-        ];
+ 
+const stages = [
+    {
+        phase: 'PHASE 01 / SEED',
+        title: 'Where the idea began',
+        text: 'Ethereal Flores began with a simple idea: to make flowers a meaningful way for people to express their feelings, celebrate special moments, and show appreciation for the people they love.',
+        image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85',
+        alt: 'A young plant representing the beginning of an idea'
+    },
+    {
+        phase: 'PHASE 02 / SPROUT',
+        title: 'Growing the vision',
+        text: 'The initial idea gradually took shape as the foundation of Ethereal Flores was developed. Its identity, purpose, and visual direction began to reflect a shared appreciation for flowers and meaningful connections.',
+        image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=85',
+        alt: 'Young green seedlings representing the growing vision'
+    },
+    {
+        phase: 'PHASE 03 / BUD',
+        title: 'Bringing the website to life',
+        text: 'As the website took shape, its design, content, and features came together to communicate the heart of Ethereal Flores. Every section was created to reflect the brand’s values and offer visitors a welcoming experience.',
+        image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85',
+        alt: 'Flower buds representing the development of the website'
+    },
+    {
+        phase: 'PHASE 04 / BLOOM',
+        title: 'Our story continues',
+        text: 'Today, the Ethereal Flores website brings its vision to life through its design, story, and values. Like a flower in bloom, it represents the progress made so far and the potential for continued growth and improvement.',
+        image: 'https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1000&q=85',
+        alt: 'Flowers in full bloom representing the website today'
+    }
+];
 
         let currentStage = 0;
-
         const historyImage = document.getElementById('historyImage');
         const phaseLabel = document.getElementById('phaseLabel');
         const phaseNumber = document.getElementById('phaseNumber');
