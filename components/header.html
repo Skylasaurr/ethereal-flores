@@ -1,14 +1,20 @@
-<header class="flex flex-row items-center justify-between fixed top-0 z-50 w-full bg-white shadow-md px-10 py-4">
+<header class="flex flex-row flex-wrap items-center justify-between fixed top-0 z-50 w-full bg-white shadow-md px-6 sm:px-10 py-4">
     <div id="brand" class="flex items-center">
         <a href="#"><img src="Resources/Brand.svg" alt="Ethereal Flores Logo" width="50" height="50"></a>
         <h1 class="text-xl font-bold ps-2">Ethereal Flores</h1>
     </div>
-    <div>
-        <ul class="flex space-x-4 ml-auto font-medium gap-4">
-            <li><a href="index.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">Home</a></li>
-            <li><a href="about.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">About</a></li>
-            <li><a href="contact.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">Contact</a></li>
-            <li><a href="explore.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">Explore</a></li>
+
+    <button id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" class="sm:hidden rounded-md p-2 text-slate-600 hover:bg-blue-50 hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600">
+        <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menu-close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <nav id="nav-menu" class="hidden w-full mt-4 border-t border-slate-100 pt-2 sm:block sm:w-auto sm:mt-0 sm:border-0 sm:pt-0">
+        <ul class="flex flex-col sm:flex-row sm:space-x-4 ml-auto font-medium gap-2 sm:gap-4">
+            <li><a href="index.html" class="block py-2 sm:py-0 text-slate-400 hover:text-blue-500 active:text-blue-700">Home</a></li>
+            <li><a href="about.html" class="block py-2 sm:py-0 text-slate-400 hover:text-blue-500 active:text-blue-700">About</a></li>
+            <li><a href="contact.html" class="block py-2 sm:py-0 text-slate-400 hover:text-blue-500 active:text-blue-700">Contact</a></li>
+            <li><a href="explore.html" class="block py-2 sm:py-0 text-slate-400 hover:text-blue-500 active:text-blue-700">Explore</a></li>
         </ul>
-    </div>
+    </nav>
 </header>

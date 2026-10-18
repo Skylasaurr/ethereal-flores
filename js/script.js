@@ -5,8 +5,41 @@ fetch('components/header.html')
   })
   .then(html => {
     document.getElementById('header-placeholder').innerHTML = html;
+    setupHeaderMenu();
   })
   .catch(error => console.error('Error loading header:', error));
+
+// Hamburger menu: the header is injected after page load, so this runs once it is in the DOM.
+function setupHeaderMenu() {
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('nav-menu');
+  const openIcon = document.getElementById('menu-open-icon');
+  const closeIcon = document.getElementById('menu-close-icon');
+  if (!toggle || !menu || !openIcon || !closeIcon) return;
+
+  function setOpen(isOpen) {
+    menu.classList.toggle('hidden', !isOpen);
+    openIcon.classList.toggle('hidden', isOpen);
+    closeIcon.classList.toggle('hidden', !isOpen);
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  toggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+
+  // Close when clicking elsewhere, pressing Escape, or growing past the sm breakpoint.
+  document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target)) setOpen(false);
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setOpen(false);
+  });
+  window.matchMedia('(min-width: 40rem)').addEventListener('change', (event) => {
+    if (event.matches) setOpen(false);
+  });
+}
 
   document.addEventListener("DOMContentLoaded", () => {
   const slidesWrapper = document.getElementById("carousel-slides");
