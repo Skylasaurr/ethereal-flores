@@ -80,6 +80,28 @@ fetch('components/header.html')
     startAutoPlay();
   }
 
+  function fillFlowerModal(modal, key) {
+    if (typeof FLOWERS === "undefined" || !FLOWERS[key]) {
+      console.error("No flower data found for:", key);
+      return;
+    }
+    const flower = FLOWERS[key];
+    const image = modal.querySelector("[data-flower-image]");
+    image.src = flower.image;
+    image.alt = flower.alt;
+    image.className = `${flower.imageClass}`;
+    modal.querySelector("[data-flower-title]").textContent = flower.title;
+    modal.querySelector("[data-flower-scientific]").textContent = `(${flower.scientificName})`;
+    modal.querySelector("[data-flower-description]").textContent = flower.description;
+    modal.querySelectorAll("[data-flower-link]").forEach((link) => (link.href = flower.link));
+    modal.querySelector("[data-flower-close-label]").setAttribute("aria-label", `Close ${flower.title} details`);
+  }
+
+  function openModal(modal, trigger) {
+    if (trigger.dataset.flower) fillFlowerModal(modal, trigger.dataset.flower);
+    modal.showModal();
+  }
+
   function setupModal(modal) {
     if (!modal.id) {
       console.error("Modal is missing an id:", modal);
@@ -89,13 +111,13 @@ fetch('components/header.html')
     document.querySelectorAll("[data-modal-target]").forEach((trigger) => {
       if (trigger.dataset.modalTarget !== modal.id) return;
 
-      trigger.addEventListener("click", () => modal.showModal());
+      trigger.addEventListener("click", () => openModal(modal, trigger));
 
       if (trigger.getAttribute("role") === "button" && !trigger.matches("button, a")) {
         trigger.addEventListener("keydown", (event) => {
           if (event.key === "Enter" || event.key === " ") {
             event.preventDefault();
-            modal.showModal();
+            openModal(modal, trigger);
           }
         });
       }
