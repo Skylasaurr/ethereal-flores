@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/flowers.js" defer></script>
     <script src="js/script.js" defer></script>
 
 	<title>Ethereal Flores - Explore</title>
@@ -22,36 +23,36 @@
             </div>
 
             <div class="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-8">
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="floribunda" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/Floribuna Roses.svg" alt="Floribunda Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Floribunda Roses</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="china" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/China Roses.svg" alt="China Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">China Roses</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="shrub" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/Shrub Roses.svg" alt="Shrub Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Shrub Roses</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="hybrid-tea" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/Hybrid Tea Roses.svg" alt="Hybrid Tea Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Hybrid Tea Roses</p>
                 </div>
 
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="ground-cover" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/Ground Cover Roses.svg" alt="Ground Cover Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Ground Cover Roses</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="grandiflora" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/Grandiflore Roses.svg" alt="Grandiflora Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Grandiflora Roses</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="alba" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/Alba Roses.svg" alt="Alba Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Alba Roses</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="gallica" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Roses/Gallica Roses.svg" alt="Gallica Roses" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Gallica Roses</p>
                 </div>
@@ -70,35 +71,35 @@
             </div>
 
             <div class="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-8">
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="african-daisy" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/African Daisies.svg" alt="African Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">African Daisies</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="aster" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/Aster Daisy.svg" alt="Aster Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Aster Daisies</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="gaillardia" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/Gaillardia Daisy.svg" alt="Gaillardia Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Gaillardia Daisies</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="blue-daisy" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/Blue Daisy.svg" alt="Blue Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Blue Daisies</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="cape-daisy" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/Cape Daisy.svg" alt="Cape Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Cape Daisies</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="coneflower" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/Coneflower Daisy.svg" alt="Coneflower Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Coneflower Daisies</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="dahlberg" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/Dahlberg Daisy.svg" alt="Dahlberg Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Dahlberg Daisies</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="english-daisy" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Daisies/English Daisy.svg" alt="English Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">English Daisies</p>
                 </div>
@@ -117,40 +118,58 @@
             </div>
 
             <div class="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-8">
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="teddy-bear" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/Teddy Bear Sunflower.svg" alt="Teddy Bear Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Teddy Bear Sunflower</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="evening-sun" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/Evening Sun.svg" alt="Evening Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Evening Sunflower</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="procut-red" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/ProCut® Red.svg" alt="ProCut® Red Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">ProCut® Red Sunflower</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="procut-white-nite" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/ProCut® White Nite.svg" alt="ProCut® White Nite Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">ProCut® White Nite Sunflower</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="firecracker" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/Firecracker.svg" alt="Firecracker Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Firecracker Sunflower</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="soraya" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/Soraya.svg" alt="Soraya Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Soraya Sunflower</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="vincents-choice" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/Vincent’s Choice.svg" alt="Vincent’s Choice Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">Vincent’s Choice Sunflower</p>
                 </div>
-                <div class="group relative h-55 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)]">
+                <div data-modal-target="flower-modal" data-flower="first-light" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="flower-modal" class="group relative h-55 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] focus-visible:outline-2 focus-visible:outline-blue-600">
                     <img src="Resources/Sunflowers/First Light.svg" alt="First Light Sunflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     <p class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-2 pb-2 pt-6 text-sm font-semibold text-white group-hover:font-bold">First Light Sunflower</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <dialog id="flower-modal" data-modal aria-labelledby="flower-modal-title" class="fixed left-1/2 top-1/2 m-0 max-h-[90vh] w-[min(90vw,50rem)] max-w-none -translate-x-1/2 -translate-y-1/2 overflow-y-auto border-0 bg-transparent p-0">
+        <div class="modal-container relative h-auto rounded-2xl bg-blue-100 px-6 py-10 shadow-lg sm:px-10">
+            <button data-modal-close data-flower-close-label type="button" aria-label="Close details" class="absolute right-4 top-3 rounded-full px-3 py-1 text-2xl text-blue-900 hover:bg-blue-200 focus-visible:outline-2 focus-visible:outline-blue-700">&times;</button>
+            <div class="mx-auto flex h-50 w-80 items-center justify-center">
+                <img data-flower-image alt="">
+            </div>
+            <div class="flex flex-col items-center">
+               <a data-flower-link href="#" target="_blank" rel="noopener noreferrer"><h1 id="flower-modal-title" data-flower-title class="font-bold text-2xl"></h1></a>
+               <h2 data-flower-scientific class="italic font-light"></h2>
+               <p data-flower-description class="mx-auto pt-10 pb-8 font"></p>
+            </div>
+            <div>
+                <a data-flower-link href="#" target="_blank" rel="noopener noreferrer"><button class="bg-blue-600 border border-blue-600 text-blue-100 py-2 px-5 rounded-lg hover:bg-blue-700 active:bg-blue-800">Know More</button></a>
+                <button data-modal-close type="button" class="inline-flex gap-2 bg-transparent border border-blue-600 text-blue-600 py-2 px-5 rounded-lg">Explore More <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24"><title>arrow-up-right</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 7h10v10M7 17L17 7"/></svg></button>
+            </div>
+        </div>
+    </dialog>
 </body>
 </html>
