@@ -8,6 +8,20 @@ fetch('components/header.html')
   })
   .catch(error => console.error('Error loading header:', error));
 
+  const footerPlaceholder = document.getElementById('footer-placeholder');
+  if (footerPlaceholder) {
+    fetch('components/footer.html')
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.text();
+      })
+      .then(html => {
+        footerPlaceholder.innerHTML = html;
+        footerPlaceholder.querySelector('[data-current-year]').textContent = new Date().getFullYear();
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
   const slidesWrapper = document.getElementById("carousel-slides");
   if (slidesWrapper) {
@@ -161,4 +175,3 @@ fetch('components/header.html')
 
   document.querySelectorAll("dialog[data-modal]").forEach(setupModal);
 });
-

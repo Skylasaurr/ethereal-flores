@@ -151,7 +151,7 @@
         </div>
     </section>
 
-    <dialog id="flower-modal" data-modal aria-labelledby="flower-modal-title" class="fixed left-1/2 top-1/2 m-0 max-h-[90vh] w-[min(90vw,50rem)] max-w-none -translate-x-1/2 -translate-y-1/2 overflow-y-auto border-0 bg-transparent p-0">
+    <dialog id="flower-modal" data-modal aria-labelledby="flower-modal-title" class="fixed left-1/2 top-1/2 m-0 max-h-[90vh] w-[min(90vw,50rem)] max-w-none -translate-x-1/2 -translate-y-1/2 overflow-y-auto border-0 bg-transparent p-0 transition-all">
         <div class="modal-container relative h-auto rounded-2xl bg-blue-100 px-6 py-10 shadow-lg sm:px-10">
             <button data-modal-close data-flower-close-label type="button" aria-label="Close details" class="absolute right-4 top-3 rounded-full px-3 py-1 text-2xl text-blue-900 hover:bg-blue-200 focus-visible:outline-2 focus-visible:outline-blue-700">&times;</button>
             <div class="mx-auto flex h-50 w-80 items-center justify-center">
@@ -164,9 +164,11 @@
             </div>
             <div>
                 <a data-flower-link href="#" target="_blank" rel="noopener noreferrer"><button class="bg-blue-600 border border-blue-600 text-blue-100 py-2 px-5 rounded-lg hover:bg-blue-700 active:bg-blue-800">Know More</button></a>
-                <button data-modal-close type="button" class="inline-flex gap-2 bg-transparent border border-blue-600 text-blue-600 py-2 px-5 rounded-lg">Explore More <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24"><title>arrow-up-right</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 7h10v10M7 17L17 7"/></svg></button>
+                <button data-modal-close type="button" class="inline-flex gap-2 bg-transparent border border-blue-600 text-blue-600 py-2 px-5 rounded-lg hover:border-blue-950 hover:text-blue-950 active:text-blue-400 active:border-blue-400">Explore More <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24"><title>arrow-up-right</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 7h10v10M7 17L17 7"/></svg></button>
             </div>
         </div>
     </dialog>
+
+    <p class="flex justify-center text-slate-300 pb-10">Stay tuned for more updates.</p>
 </body>
 </html>
