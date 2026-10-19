@@ -135,4 +135,30 @@ fetch('components/header.html')
   }
 
   document.querySelectorAll("dialog[data-modal]").forEach(setupModal);
+
+  function setupImageSkeletons() {
+    document.querySelectorAll("[data-flower] img").forEach((img) => {
+      const card = img.parentElement;
+      if (img.complete) return; // already loaded (e.g. from cache), no skeleton needed
+
+      const skeleton = document.createElement("div");
+      skeleton.setAttribute("aria-hidden", "true");
+      skeleton.className =
+        "pointer-events-none absolute inset-0 z-10 animate-pulse bg-slate-200 transition-opacity duration-300";
+      skeleton.innerHTML = '<div class="absolute bottom-3 left-2 h-3 w-2/3 rounded bg-slate-300"></div>';
+      card.appendChild(skeleton);
+
+      const reveal = () => {
+        skeleton.classList.add("opacity-0");
+        setTimeout(() => skeleton.remove(), 300);
+      };
+      img.addEventListener("load", reveal, { once: true });
+      img.addEventListener("error", reveal, { once: true }); // never pulse forever on a broken image
+    });
+  }
+
+  setupImageSkeletons();
+
+  document.querySelectorAll("dialog[data-modal]").forEach(setupModal);
 });
+
