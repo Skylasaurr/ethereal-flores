@@ -1,6 +1,3 @@
-// Content for the reusable flower modal on explore.html.
-// To add a flower: add an entry here, then give its card  data-modal-target="flower-modal"  and  data-flower="<key>".
-//   imageClass keeps each picture upright (some SVGs are stored sideways): "rotate-90", "-rotate-90", or none.
 const FLOWERS = {
   "floribunda": {
     title: "Floribunda Roses",
