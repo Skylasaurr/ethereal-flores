@@ -182,7 +182,7 @@ if (headerPlaceholder) {
   function setupImageSkeletons() {
     document.querySelectorAll("[data-flower] img").forEach((img) => {
       const card = img.parentElement;
-      if (img.complete) return; // already loaded (e.g. from cache), no skeleton needed
+      if (img.complete) return; 
 
       const skeleton = document.createElement("div");
       skeleton.setAttribute("aria-hidden", "true");
@@ -196,7 +196,7 @@ if (headerPlaceholder) {
         setTimeout(() => skeleton.remove(), 300);
       };
       img.addEventListener("load", reveal, { once: true });
-      img.addEventListener("error", reveal, { once: true }); // never pulse forever on a broken image
+      img.addEventListener("error", reveal, { once: true });
     });
   }
 
