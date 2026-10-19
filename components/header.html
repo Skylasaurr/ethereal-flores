@@ -1,14 +1,36 @@
-<header class="flex flex-row items-center justify-between fixed top-0 z-50 w-full bg-white shadow-md px-10 py-4 min-w-[600px]">
-    <div id="brand" class="flex items-center">
-        <a href="#"><img src="Resources/Brand.svg" alt="Ethereal Flores Logo" width="50" height="50"></a>
-        <h1 class="text-xl font-bold ps-2">Ethereal Flores</h1>
-    </div>
-    <div>
-        <ul class="flex space-x-4 ml-auto font-medium gap-4">
-            <li><a href="index.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">Home</a></li>
-            <li><a href="about.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">About</a></li>
-            <li><a href="contact.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">Contact</a></li>
-            <li><a href="explore.html" class="text-slate-400 hover:text-blue-500 active:text-blue-700">Explore</a></li>
-        </ul>
+<header class="fixed inset-x-0 top-0 z-50 bg-white shadow-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-10">
+        <a href="index.html" class="flex shrink-0 items-center gap-3" aria-label="Ethereal Flores home">
+            <img src="Resources/Brand.svg" alt="" width="48" height="48" class="h-12 w-12">
+            <span class="text-lg font-bold text-slate-800 sm:text-xl">Ethereal Flores</span>
+        </a>
+
+        <nav aria-label="Main navigation" class="hidden md:block">
+            <ul class="flex items-center gap-6 font-medium">
+                <li><a href="index.html" class="text-slate-500 transition hover:text-blue-500 focus-visible:text-blue-700">Home</a></li>
+                <li><a href="about.html" class="text-slate-500 transition hover:text-blue-500 focus-visible:text-blue-700">About</a></li>
+                <li><a href="contact.html" class="text-slate-500 transition hover:text-blue-500 focus-visible:text-blue-700">Contact</a></li>
+                <li><a href="explore.html" class="text-slate-500 transition hover:text-blue-500 focus-visible:text-blue-700">Explore</a></li>
+            </ul>
+        </nav>
+
+        <details class="group relative md:hidden">
+            <summary aria-label="Toggle navigation menu" class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md text-slate-700 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 [&::-webkit-details-marker]:hidden">
+                <svg aria-hidden="true" class="h-6 w-6 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg aria-hidden="true" class="hidden h-6 w-6 group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </summary>
+            <nav aria-label="Mobile navigation" class="absolute right-0 top-full mt-2 w-56 rounded-lg bg-white p-2 shadow-lg ring-1 ring-black/10">
+                <ul class="flex flex-col gap-1 font-medium">
+                    <li><a href="index.html" class="block rounded-md px-4 py-3 text-slate-600 hover:bg-slate-100 hover:text-blue-600 focus-visible:bg-slate-100">Home</a></li>
+                    <li><a href="about.html" class="block rounded-md px-4 py-3 text-slate-600 hover:bg-slate-100 hover:text-blue-600 focus-visible:bg-slate-100">About</a></li>
+                    <li><a href="contact.html" class="block rounded-md px-4 py-3 text-slate-600 hover:bg-slate-100 hover:text-blue-600 focus-visible:bg-slate-100">Contact</a></li>
+                    <li><a href="explore.html" class="block rounded-md px-4 py-3 text-slate-600 hover:bg-slate-100 hover:text-blue-600 focus-visible:bg-slate-100">Explore</a></li>
+                </ul>
+            </nav>
+        </details>
     </div>
 </header>
