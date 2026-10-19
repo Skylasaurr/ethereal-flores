@@ -1,12 +1,41 @@
-fetch('components/header.html')
-  .then(response => {
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return response.text();
-  })
-  .then(html => {
-    document.getElementById('header-placeholder').innerHTML = html;
-  })
-  .catch(error => console.error('Error loading header:', error));
+const headerPlaceholder = document.getElementById('header-placeholder');
+if (headerPlaceholder) {
+  headerPlaceholder.setAttribute('aria-busy', 'true');
+  headerPlaceholder.innerHTML = `
+    <div role="status" aria-label="Loading navigation">
+      <span class="sr-only">Loading navigation</span>
+      <header aria-hidden="true" class="fixed inset-x-0 top-0 z-50 bg-white shadow-md">
+        <div class="mx-auto flex items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-10">
+          <div class="flex shrink-0 items-center gap-3">
+            <div class="h-12 w-12 rounded-full bg-slate-200 motion-reduce:animate-none animate-pulse"></div>
+            <div class="h-5 w-36 rounded bg-slate-200 motion-reduce:animate-none animate-pulse"></div>
+          </div>
+          <div class="hidden items-center gap-6 md:flex">
+            <div class="h-4 w-10 rounded bg-slate-200 motion-reduce:animate-none animate-pulse"></div>
+            <div class="h-4 w-12 rounded bg-slate-200 motion-reduce:animate-none animate-pulse"></div>
+            <div class="h-4 w-14 rounded bg-slate-200 motion-reduce:animate-none animate-pulse"></div>
+            <div class="h-4 w-12 rounded bg-slate-200 motion-reduce:animate-none animate-pulse"></div>
+          </div>
+          <div class="h-11 w-11 rounded-md bg-slate-200 motion-reduce:animate-none animate-pulse md:hidden"></div>
+        </div>
+      </header>
+    </div>`;
+
+  fetch('components/header.html')
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.text();
+    })
+    .then(html => {
+      headerPlaceholder.innerHTML = html;
+      headerPlaceholder.removeAttribute('aria-busy');
+    })
+    .catch(error => {
+      console.error('Error loading header:', error);
+      headerPlaceholder.removeAttribute('aria-busy');
+      headerPlaceholder.innerHTML = '<p role="alert" class="fixed inset-x-0 top-0 z-50 bg-white px-4 py-3 text-center text-sm text-red-700 shadow-md">Navigation could not be loaded.</p>';
+    });
+}
 
   const footerPlaceholder = document.getElementById('footer-placeholder');
   if (footerPlaceholder) {
